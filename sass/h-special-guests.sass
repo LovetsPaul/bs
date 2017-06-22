@@ -1,0 +1,34 @@
+@import "bourbon"
+@import "vars.sass"
+
+.h-special-guests
+
+.h-guest-card-wrapp
+	margin-top: 20px
+.h-guest-card
+	max-width: 264px
+	margin: auto
+	height: 297px
+	background-color: #fff
+	margin-bottom: 35px
+	box-shadow: 0 0 7px rgba(0,0,0,0.5)
+	transition: all 0.2s ease
+	&:hover
+		box-shadow: 0 0 27px rgba(0,0,0,0.6)
+	&-content
+		padding: 15px
+		font-size: 13px
+		color: $text-gray
+		font-family: $text-main
+		line-height: 15px
+		&__title
+			margin: 0 0 15px 0
+			text-align: left
+			color: $red
+		&__descr
+			height: 46px
+			overflow: auto
+			position: relative
+.s-light
+	.h-guest-card-content__title
+		color: $red

@@ -1,0 +1,6 @@
+li { list-style-type: none; } /* Убираем исходную нумерацию у списка */
+.ol-start-14 ol { counter-reset: list 13; } /* Инициируем счетчик */
+.ol-start-14 ol li:before {
+	counter-increment: list; /* Увеличиваем значение счетчика */
+	content: counter(list) ". "; /* Выводим число */
+}

@@ -1,0 +1,23 @@
+ol {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding:0; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+  }
+  ol li {
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:0 0 6px 2em; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+      padding:4px 3px;
+      }
+  ol li:before {
+      content:counter(li)'.'; /* В качестве данных используем счетчик */
+      counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и оформляем цифры */
+      position:absolute;
+      top: 1px;
+      left:-1.2em;
+      width:1em;
+      padding:4px 0;
+      color: rgb(255, 228, 0);
+      font-family:"badaboom",sans-serif;
+      text-align:center;
+      }

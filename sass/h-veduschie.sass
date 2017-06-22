@@ -3,19 +3,30 @@
 
 
 .h-veduschie
+	padding-bottom: 20px
 .h-veduschi	
 	display: flex
 	justify-content: center
 	margin-bottom: 15px
-	overflow: hidden
 	text-align: center
 	&__photo
-		border: 5px solid #fff
-		overflow: hidden
-		width: 125px
-		height: 125px
-		border-radius: 10em
-		background-color: rgba(255,255,255,0.3)
+		position: relative
+		img
+
+			border: 5px solid #fff
+			overflow: hidden
+			width: 125px
+			border-radius: 10em
+			height: 125px
+		&::before
+			content: ''
+			position: absolute
+			width: 83px
+			height: 56px
+			background: url(../img/bang-show-logo_s.png) no-repeat
+			top: -20px
+			right: -20px
+			z-index: 2
 	&__content
 		padding-left: 25px
 		text-align: left
