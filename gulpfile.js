@@ -30,9 +30,9 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'./app/libs/jquery/jquery-1.11.2.min.js',
+		'./app/libs/jquery/dist/jquery.min.js',
 		'./app/libs/wow/dist/wow.min.js',
-		'./app/libs/lazy-load/lazy-load.js',
+		'./app/libs/jquery_lazyload/jquery.lazyload.js'
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

@@ -1,0 +1,21 @@
+@import "vars"
+
+.action-button
+	color: $text-color
+	display: inline-block
+	font-size: 24px
+	letter-spacing: -1px
+	padding: 2px 15px
+	border-radius: 5px
+	overflow: hidden
+	background: url(../img/button-bg.png) repeat
+	transition: all 0.2s ease
+	box-shadow: 0 1px 3px rgba(0,0,0,0.7)
+	&:hover,
+	&:active,
+	&:focus
+		color: $text-color
+		text-decoration: none
+	&:hover
+		color: $red
+		box-shadow: 0 0px 3px rgba(0,0,0,0.2)

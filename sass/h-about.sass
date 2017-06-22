@@ -1,0 +1,20 @@
+@import "bourbon"
+@import "vars.sass"
+
+.h-about
+	h2
+		color: $text-color
+		background: url(../img/afish-label.png) no-repeat center
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -50px
+			z-index: 1
+			background: url(../img/bang-show-logo-m.png) no-repeat 52% 0%
+			width: 138px
+			height: 94px
+	&__text
+		color: #fff
+
+	

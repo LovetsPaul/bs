@@ -1,0 +1,21 @@
+{
+  "name": "bang show",
+  "homepage": "https://github.com/LovetsPaul/bs",
+  "authors": [
+    "Paul <chan-narodnik@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-lazy": "^1.7.5"
+  }
+}

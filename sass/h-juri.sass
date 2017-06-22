@@ -1,0 +1,30 @@
+@import "bourbon"
+@import "vars.sass"
+
+.h-juri	
+	&__photo
+		text-align: center
+.h-juri-list
+	list-style-type: none
+	padding: 15px 0
+	text-align: center
+	margin: 0
+	&__item
+		width: 19%
+		display: inline-block
+		h4
+			color: $red
+			margin-top: 0
+			margin-bottom: 0
+			a, a:active, a:focus
+				color: inherit
+				text-decoration: none
+				transition: color 0.2s ease
+			a:hover
+				color: $text-color
+		&-descr
+			text-align: left
+			padding-left: 7px
+			font-size: 14px
+			color: $text-gray
+			font-family: $text-bold

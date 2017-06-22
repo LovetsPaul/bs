@@ -1,36 +1,58 @@
 @import "bourbon"
 
 //Load Libs SASS
-@import "app/libs/animate/animate.sass"
+@import "../app/libs/animate.css/animate.min"
+@import "vars"
+
+
 
 .to-right
 	float: right
-
-
+/*Include Section Sass style*/
+@import "typography"
 @import "header"
+@import "buttons"
+@import "for-all-section"
 @import "nav-panel"
+@import "h-about"
+@import "h-kasting"
+@import "h-juri"
+@import "h-veduschie"
 
+/**/
 
 .main
 	
 	background: url(../img/bg-bang.jpg) repeat
 	min-height: 3320px
+.home
+	.list
+		background: url(../img/triangle-bg.jpg) repeat-y
+		box-shadow: 0 7px 20px rgba(0,0,0,0.8)
+		.s-light
+			background: url(../img/doted-overlay.png) repeat
 .list
 	margin: auto
+	position: relative
 	margin-top: -65px
 	max-width: 1170px
 	width: 100%
 	position: relative
 	z-index: 3
 	background: #fff url(../img/bg-text.gif) repeat
-	min-height: 320px
-
-
-
-
-
-
-
+	min-height: 3320px
+	&::before, &::after
+		content: ''
+		position: absolute
+		width: 33px
+		height: 45px
+		top: 5px
+		background: url(../img/skrepka_l.png) no-repeat
+	&::before
+		left: 4%
+	&::after
+		right: 4%
+		transform: scaleX(-1)
 
 
 

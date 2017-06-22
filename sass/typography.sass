@@ -1,0 +1,40 @@
+@import "bourbon"
+@import "vars.sass"
+
+h1
+	font-size: 72px
+h2
+	font-size: 60px
+h3
+	font-size: 36px
+h4
+	font-size: 23px
+h5
+	font-size: 20px
+h6
+	font-size: 18px
+
+h1,h2,h3,h4,h5,h6
+	font-family: 'badaboom'
+	letter-spacing: 2px
+	color: $orange
+	text-align: center
+	font-weight: normal
+h1,h2,h3,h4,h5,h6
+	&.with-line
+		position: relative
+		&::after
+			position: absolute
+			top: 100%
+			left: 0
+			content: ''
+			height: 4px
+			width: 100%
+			background: url(../img/line-dual.png) no-repeat center
+			background-size: cover
+a, a:hover,a:focus, a:active
+	text-decoration: none
+	color: $text-color
+.s-light
+	h1,h2,h3,h4,h5,h6
+		color: $text-color

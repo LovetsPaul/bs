@@ -1,0 +1,1 @@
+.h-about,.h-juri__list,.h-juri__photo,.h-kasting{position:relative}.h-about::after,.h-juri__list::after,.h-juri__photo::after,.h-kasting::after{z-index:1;content:'';position:absolute;top:100%;left:0;width:100%;height:4px}
