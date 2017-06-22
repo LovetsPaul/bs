@@ -28,32 +28,105 @@
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
 	<!-- Load CSS Start -->
-	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
-	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
-	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- <script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script> -->
+	<!-- <script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script> -->
+	<!-- <script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script> -->
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
-		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
+		<!-- <link rel="stylesheet" href="css/fonts.min.css"> -->
+		<!-- <link rel="stylesheet" href="css/main.min.css"> -->
 	</noscript>
 
 </head>
 
 <body>
 
-	<!-- Здесь пишем код -->
+<div class="stage">
+	<div class="stage__logo">
+		<img src="img/bang-show-logo_l.png" data-wow-delay="1s" class="wow bounceIn" alt="Bang Show Logo">
+	</div>
+	<div class="stage__text">
+		<span data-wow-delay="2s" class="wow fadeInUp">Лучшее </span>
+		<span data-wow-delay="2.5s" class="wow fadeInUp">юмористическое </span>
+		<span data-wow-delay="3s" class="wow fadeInUp">шоу</span>
+	</div>
+	
+</div>
+<div class="nav-panel">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav>
+					<ul class="nav-menu">
+						<li class="nav-menu__item current-menu-item"><a href="#">Главная</a></li>
+						<li class="nav-menu__item"><a href="#">О проекте</a></li>
+						<li class="nav-menu__item"><a href="#">Кастинг</a></li>
+						<li class="nav-menu__item"><a href="#">Менторы</a></li>
+						<li class="nav-menu__item"><a href="#">Юниты</a></li>
+						<li class="nav-menu__item"><a href="#">Менторы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<nav>
+					<ul class="registration">
+						<li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Вход</a></li>
+						<li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Регистрация</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-6">
+				<nav>
+					<ul class="social-links social-links_white to-right">
+						<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="main">
+	<div class="list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">123</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			
+		</div>
+	</div>
+</div>
 
 
-	<div class="hidden"></div>
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
+
+
+
+
+
+
+<div class="hidden"></div>
+
+	
 
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
