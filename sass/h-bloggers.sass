@@ -1,0 +1,52 @@
+@import "vars.sass"
+
+.h-bloggers
+	&-list
+		display: flex
+		flex-direction: row
+		justify-content: center
+		text-align: center
+	&-item
+		text-align: center
+		padding: 0 1%
+		flex: 20%
+		h5
+			color: #fff
+			margin: 5px
+		a
+			color: inherit
+			transition: color 0.2s ease
+			&:hover
+				color: $orange
+	&-item__image
+		position: relative
+		margin: auto
+		width: 125px
+		height: 125px
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			width: 83px
+			height: 56px
+			background: url(../img/bang-show-logo_s.png) no-repeat
+			top: -20px
+			right: -20px
+			z-index: 2
+		img
+			width: 125px
+			height: 125px
+			overflow: hidden
+			border-radius: 10em
+			border: 5px solid #fff
+	&-item-subscr__count
+		font-size: 24px
+		font-family: $text-bold
+		color: $orange
+	&-item-subscr__descr
+		font-size: 14px
+		font-family: $text-bold
+		color: $orange
+
+	.social-links
+		margin-top: 7px
