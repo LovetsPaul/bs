@@ -34,7 +34,7 @@ $('.stage').ready(function(){
 	    });
 
 	}else{
-		
+
 		$('body').removeClass('oh');
 	}
 
@@ -42,8 +42,10 @@ $('.stage').ready(function(){
 
 $("img.lazy").lazyload({
 	effect : "fadeIn",
-	threshold : 200
+	threshold : 300
 });
+
+
 
 new WOW().init();
 
