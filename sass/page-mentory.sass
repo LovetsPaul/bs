@@ -1,0 +1,102 @@
+@import "bourbon"
+@import "vars.sass"
+
+.list-top
+	position: relative
+	margin-bottom: 30px
+	&::after
+		position: absolute
+		top: 100%
+		left: 0
+		content: ''
+		height: 4px
+		width: 100%
+		background: url(../img/line-left.png) no-repeat 15px center
+		background-size: contain
+.list-title
+	background: url(../img/bang-show-logo-m.png) no-repeat left center
+	margin: 20px
+	color: $text-color
+
+.mentory-list__item
+	margin-top: 20px
+	h3
+		color: $text-color
+.mentor-item-header
+	background: url(../img/mentory-bg.jpg) no-repeat top center
+	background-size: cover
+	text-align: center
+	margin-top: 30px
+	img
+		margin-top: -35px
+
+.mentors-junits-list
+	background-color: #000
+	min-height: 300px
+	overflow: hidden
+	padding-top: 40px
+	padding-bottom: 30px
+.junit-disabled
+	.mentors-junit-card__photo
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			width: 100%
+			height: 191px
+			background: rgba(0,0,0,0.6)
+.mentors-junit-card
+	&.junit-disabled
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -2px
+			left: -31px
+			width: 147px
+			height: 67px
+			background: url(../img/unit-disable.png) no-repeat
+	max-width: 264px
+	margin: auto
+
+	background-color: #fff
+	margin-bottom: 35px
+	transition: all 0.2s ease
+	&__photo
+		height: 190px
+		overflow: hidden
+	&-content
+		padding: 15px
+		font-size: 13px
+		color: $text-gray
+		font-family: $text-main
+		line-height: 15px
+		&__title
+			margin: 0 0 15px 0
+			text-align: left
+			color: $red
+			a
+				transition: color 0.2s ease
+				color: inherit
+				&:hover
+					color: $text-color
+		&__descr
+			height: 46px
+			overflow: auto
+			position: relative
+			margin-bottom: 10px
+		&__blogger
+			i
+				color: $red
+				position: relative
+				top: 1px
+				transition: color 0.2s ease
+				&:hover
+					color: $text-color
+
+		&__descr,
+		&__blogger
+			span
+				font-family: $text-bold

@@ -25,7 +25,7 @@ var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop
 $('.stage').ready(function(){
 	$('.preloader').fadeOut('fast');
 
-	if( cont_top < 10 && !isMobile.any() ){
+	if( cont_top < 10 && !isMobile.any() && $('body').hasClass('home')){
 		$('html, body').stop().delay(5000).animate({
 			scrollTop: $("#nav-panel").offset().top+40
 			}, 800, 'swing', function(){

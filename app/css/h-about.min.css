@@ -1,1 +1,16 @@
-.h-about{padding-bottom:15px}.h-about h2{color:#111;background:url(../img/afish-label.png) no-repeat center;position:relative}.h-about h2::after{content:'';position:absolute;top:-23px;z-index:1;background:url(../img/bang-show-logo_s.png) no-repeat 52% 0;width:83px;height:56px}.h-about__text{color:#fff}
+.h-about {
+  padding-bottom: 15px; }
+  .h-about h2 {
+    color: #111111;
+    background: url(../img/afish-label.png) no-repeat center;
+    position: relative; }
+    .h-about h2::after {
+      content: '';
+      position: absolute;
+      top: -23px;
+      z-index: 1;
+      background: url(../img/bang-show-logo_s.png) no-repeat 52% 0%;
+      width: 83px;
+      height: 56px; }
+  .h-about__text {
+    color: #fff; }

@@ -1,1 +1,23 @@
-@font-face{font-family:badaboom;font-style:normal;font-weight:400;src:url(../fonts/badaboom/9924.ttf) format("truetype")}@font-face{font-family:DINPro-Black;font-style:normal;font-weight:400;src:url(../fonts/DINPro-Black/DINPro-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/DINPro-Black/DINPro-Black.woff) format("woff"),url(../fonts/DINPro-Black/DINPro-Black.ttf) format("truetype")}@font-face{font-family:DINPro-Regular;font-style:normal;font-weight:400;src:url(../fonts/DINPro-Regular/DINPro-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/DINPro-Regular/DINPro-Regular.woff) format("woff"),url(../fonts/DINPro-Regular/DINPro-Regular.ttf) format("truetype"),url(../fonts/DINPro-Regular/DINPro-Regular.svg#DINPro-Regular) format("svg")}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;src:url(../fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff) format("woff"),url(../fonts/fontawesome-webfont.ttf) format("truetype"),url(../fonts/fontawesome-webfont.svg#FontAwesome) format("svg")}
+@font-face {
+  font-family: "badaboom";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/badaboom/9924.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "DINPro-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DINPro-Black/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Black/DINPro-Black.woff") format("woff"), url("../fonts/DINPro-Black/DINPro-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "DINPro-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DINPro-Regular/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Regular/DINPro-Regular.woff") format("woff"), url("../fonts/DINPro-Regular/DINPro-Regular.ttf") format("truetype"), url("../fonts/DINPro-Regular/DINPro-Regular.svg#DINPro-Regular") format("svg"); }
+
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg"); }

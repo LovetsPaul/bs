@@ -1,1 +1,38 @@
-.h-girl-container{height:100%}.h-bang-girl__item{width:33.3%;height:33.3%;float:left;background-size:cover;background-position:center;border:2px solid #fff;position:relative}.h-bang-girl__item::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.4)}.h-bang-girl-raiting{position:absolute;top:50%;left:50%;width:100%;text-align:center;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:0;opacity:.8}.h-bang-girl-raiting i{font-family:FontAwesome;text-align:center;color:#ffe400;font-size:15px;margin:1px;text-shadow:0 0 2px #000}
+.h-girl-container {
+  height: 100%; }
+
+.h-bang-girl__item {
+  width: 33.3%;
+  height: 33.3%;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  position: relative; }
+  .h-bang-girl__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.h-bang-girl-raiting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.8; }
+  .h-bang-girl-raiting i {
+    font-family: 'FontAwesome';
+    text-align: center;
+    color: #ffe400;
+    font-size: 15px;
+    margin: 1px;
+    text-shadow: 0 0 2px #000; }

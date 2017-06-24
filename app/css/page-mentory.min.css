@@ -1,0 +1,99 @@
+.list-top {
+  position: relative;
+  margin-bottom: 30px; }
+  .list-top::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: url(../img/line-left.png) no-repeat 15px center;
+    background-size: contain; }
+
+.list-title {
+  background: url(../img/bang-show-logo-m.png) no-repeat left center;
+  margin: 20px;
+  color: #111111; }
+
+.mentory-list__item {
+  margin-top: 20px; }
+  .mentory-list__item h3 {
+    color: #111111; }
+
+.mentor-item-header {
+  background: url(../img/mentory-bg.jpg) no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 30px; }
+  .mentor-item-header img {
+    margin-top: -35px; }
+
+.mentors-junits-list {
+  background-color: #000;
+  min-height: 300px;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+
+.junit-disabled .mentors-junit-card__photo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 191px;
+  background: rgba(0, 0, 0, 0.6); }
+
+.mentors-junit-card {
+  max-width: 264px;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 35px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .mentors-junit-card.junit-disabled {
+    position: relative; }
+    .mentors-junit-card.junit-disabled::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -31px;
+      width: 147px;
+      height: 67px;
+      background: url(../img/unit-disable.png) no-repeat; }
+  .mentors-junit-card__photo {
+    height: 190px;
+    overflow: hidden; }
+  .mentors-junit-card-content {
+    padding: 15px;
+    font-size: 13px;
+    color: #505050;
+    font-family: "DINPro-Regular";
+    line-height: 15px; }
+    .mentors-junit-card-content__title {
+      margin: 0 0 15px 0;
+      text-align: left;
+      color: #fc340f; }
+      .mentors-junit-card-content__title a {
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.2s ease;
+        color: inherit; }
+        .mentors-junit-card-content__title a:hover {
+          color: #111111; }
+    .mentors-junit-card-content__descr {
+      height: 46px;
+      overflow: auto;
+      position: relative;
+      margin-bottom: 10px; }
+    .mentors-junit-card-content__blogger i {
+      color: #fc340f;
+      position: relative;
+      top: 1px;
+      -webkit-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+      .mentors-junit-card-content__blogger i:hover {
+        color: #111111; }
+    .mentors-junit-card-content__descr span, .mentors-junit-card-content__blogger span {
+      font-family: "DINPro-Black"; }
