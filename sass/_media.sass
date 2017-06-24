@@ -3,18 +3,66 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1391px)
+	.h-juri-list__item,
+	.h-juri-list__item h4,
+	.h-juri-list__item-descr
+		text-align: center
 @media only screen and (max-width : 1200px)
 	/**/
 
-
+@media only screen and (max-width : 1093px)
+	.nav-panel
+		.social-links
+			margin-top: 35px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.stage
+		background-image: url(../img/stage-mobile.jpg)
+		box-shadow: 0 1px 17px rgba(0,0,0,0.5);
+	h1.stage__text
+		font-size: 50px
 
+	.footer
+		.contacts-phone,
+		.f-social
+			margin-top: 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.stage__logo 
+		img
+			width: 44vh
+			top: 50vh
+
+	h1.stage__text
+		font-size: 36px
+		top: 60vh
+	.h-juri-list
+		&__item
+			width: 49%
+			margin-bottom: 10px
+		&__item-descr
+			text-align: center
+	.h-bloggers
+		&-list
+			flex-wrap: wrap
+		&-item
+			margin-top: 30px
+			flex: 30%
+	.chess-row
+		flex-wrap: wrap
+		flex-direction: column-reverse
+		&__img
+			max-width: 100%
+			min-height: auto
+		&__img,
+		&__text
+			flex: 100%
+	.h-girl-container
+		height: 400px	
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -41,7 +89,17 @@
 @media only screen and (max-width : 480px)
 	/**/
 
-
+	.h-juri-list
+		&__item
+			width: 100%
+	.footer
+		.f-social
+			font-size: 15px
+		.registration
+			margin-top: 40px
+			text-align: center
+	.f-menu
+		display: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

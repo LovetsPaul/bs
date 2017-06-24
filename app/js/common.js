@@ -1,24 +1,24 @@
 $(function() {
 
 var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
+	Android: function() {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function() {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function() {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function() {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function() {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function() {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	}
 };
 
 var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
@@ -31,7 +31,7 @@ $('.stage').ready(function(){
 			}, 800, 'swing', function(){
 
 			$('body').delay(1000).removeClass('oh');
-	    });
+		});
 
 	}else{
 
@@ -48,6 +48,49 @@ $("img.lazy").lazyload({
 
 
 new WOW().init();
+
+$(document).ready(function(){
+	if(isMobile.any()){
+		$('.owl-carousel div').removeClass('col-md-4 col-sm-6 col-xs-12');
+		$('.owl-carousel img').each(function(){
+			var $img_src = $(this).attr('data-original');
+			console.log($img_src);
+			$(this).removeAttr('data-original').attr('data-src', $img_src);
+		});
+		$('.owl-carousel img').addClass('owl-lazy');
+		$(".owl-carousel").owlCarousel({
+				items: 3,
+				center: true,
+				loop: true,
+				margin: -70,
+				lazyLoad: true,
+				responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items: 1,
+					margin: -300
+				},
+				1024:{
+					items: 1,
+					margin: -400
+				}
+		}
+	
+		});
+	}
+});
+
+$('a.toogle-nav').click(function(e){
+	e.preventDefault();
+	$('.mobile-menu-popup-wrapp').toggleClass('mobile-menu-slide');
+});
+
+$('a.mobile-menu-close-toogle').click(function(e){
+	e.preventDefault();
+	$('.mobile-menu-popup-wrapp').toggleClass('mobile-menu-slide');
+});
 
 
 

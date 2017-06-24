@@ -1,5 +1,5 @@
 @import "vars.sass"
-
+@import "bourbon"
 .footer
 	margin-top: -3px
 	position: relative
@@ -10,6 +10,26 @@
 	position: relative
 	color: #fff
 	text-align: left
+	&::before
+		z-index: 2
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 4px
+		@include linear-gradient(to right, #5b499b 0%, #f0678c 50%, #f0678c 80%, #5a489a 100%);
+	.container
+		position: relative
+		&::before
+			content: ''
+			z-index: 3
+			position: absolute
+			background: url(../img/bang-show-logo_s.png) no-repeat
+			width: 83px
+			height: 56px
+			top: -65px
+			left: 0
 	.contacts-phone
 		a
 			font-size: 15px

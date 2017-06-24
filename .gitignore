@@ -1,3 +1,5 @@
 node_modules/
 *.ppk
 app/libs
+app/img/notyny/
+app/img/tyny
