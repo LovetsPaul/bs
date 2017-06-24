@@ -8,6 +8,10 @@
 
 .to-right
 	float: right
+	&::after
+		content: ''
+		display: table-cell
+		clear: both
 .image-responsive
 	max-width: 100%
 /*Include Section Sass style*/
@@ -26,6 +30,8 @@
 @import "h-bloggers"
 @import "h-bang-music"
 @import "h-bang-girl"
+@import "h-bottom"
+@import "footer"
 
 /**/
 .oh
@@ -34,7 +40,7 @@
 .main
 	
 	background: url(../img/bg-bang.jpg) repeat
-	min-height: 3320px
+	min-height: 1000px
 .home
 	.list
 		background: url(../img/triangle-bg.jpg) repeat-y
