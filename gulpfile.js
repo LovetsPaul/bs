@@ -34,7 +34,8 @@ gulp.task('scripts', function() {
 		'./app/libs/wow/dist/wow.min.js',
 		'./app/libs/jquery_lazyload/jquery.lazyload.js',
 		'./app/libs/owl.carousel/dist/owl.carousel.min.js',
-		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'./app/libs/fotorama/fotorama.js'
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

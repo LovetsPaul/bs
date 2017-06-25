@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.post-ratings .metatextsmall {
+  font-size: 12px; }
+
+.bang-girl {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 40px; }
+  .bang-girl__id {
+    position: absolute;
+    font-family: "DINPro-Black";
+    z-index: 10;
+    width: 101px;
+    height: 66px;
+    background: url(../img/bang.png) no-repeat center;
+    background-size: cover;
+    -webkit-transform: translate(-20%, -50%);
+    -ms-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
+    text-align: center;
+    padding-left: -3px;
+    padding-top: 15px; }
+  .bang-girl__item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 40px 0 70px; }
+    .bang-girl__item::after {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: url(../img/line-dual.png) no-repeat center; }
+  .bang-girl__gallery {
+    -webkit-box-flex: 25%;
+    -webkit-flex: 25%;
+    -ms-flex: 25%;
+    flex: 25%; }
+  .bang-girl__descr {
+    -webkit-box-flex: 25%;
+    -webkit-flex: 25%;
+    -ms-flex: 25%;
+    flex: 25%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .bang-girl__descr h4 {
+      color: #fc340f;
+      text-align: left;
+      margin: 0; }
+  .bang-girl__raiting-title {
+    font-size: 14px;
+    font-family: "DINPro-Black";
+    margin-bottom: 0; }
+  .bang-girl__about {
+    font-size: 14px;
+    padding-left: 20px; }
+    .bang-girl__about span {
+      font-family: "DINPro-Black"; }
+    .bang-girl__about li {
+      position: relative;
+      margin-bottom: 3px; }
+      .bang-girl__about li::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -21px;
+        font-family: "FontAwesome";
+        font-size: 18px;
+        color: #ffe400; }
+  .bang-girl__prank {
+    -webkit-box-flex: 50%;
+    -webkit-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    margin-top: 7px; }
+    .bang-girl__prank h6 {
+      font-family: "DINPro-Black";
+      text-align: left;
+      color: #111111;
+      margin: 0 0 10px 0;
+      padding: 0 5px; }
+    .bang-girl__prank-text {
+      font-style: italic;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 15px;
+      border-left: 3px solid #ffe400; }
+
+.fotorama__wrap {
+  margin: auto; }

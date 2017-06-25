@@ -1,0 +1,85 @@
+@import "vars.sass"
+@import "post-raitings"
+
+.bang-girl
+	margin-left: 15px
+	margin-right: 15px
+	margin-top: 40px
+	&__id
+		position: absolute
+		font-family: $text-bold
+		z-index: 10
+		width: 101px
+		height: 66px
+		background: url(../img/bang.png) no-repeat center
+		background-size: cover
+		transform: translate(-20%, -50%)
+		text-align: center
+		padding-left: -3px
+		padding-top: 15px
+	&__item
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: center
+		flex-direction: row
+		margin: 40px 0 70px
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: -35px
+			left: 0
+			width: 100%
+			height: 4px
+			background: url(../img/line-dual.png) no-repeat center
+	&__gallery
+		flex: 25%
+	&__descr
+		flex: 25%
+		padding: 0 15px
+		box-sizing: border-box
+		h4
+			color: $red
+			text-align: left
+			margin: 0
+	&__raiting-title
+		font-size: 14px
+		font-family: $text-bold
+		margin-bottom: 0
+	&__about
+		font-size: 14px
+		padding-left: 20px
+		span
+			font-family: $text-bold
+		li
+			position: relative
+			margin-bottom: 3px
+			&::before
+				content: ''
+				position: absolute
+				top: -2px
+				left: -21px
+				font-family: "FontAwesome"
+				font-size: 18px
+				color: $orange
+	&__prank
+		flex: 50%
+		margin-top: 7px
+		h6
+			font-family: $text-bold
+			text-align: left
+			color: $text-color
+			margin: 0 0 10px 0
+			// background-color: $girl-line-color
+			padding: 0 5px
+		&-text
+			font-style: italic
+			font-size: 14px
+			line-height: 20px
+			padding-left: 15px
+			border-left: 3px solid $orange
+		
+.fotorama__wrap
+	margin: auto

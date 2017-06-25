@@ -4,6 +4,7 @@
 @import "../app/libs/animate.css/animate.min"
 @import "../app/libs/owl.carousel/dist/assets/owl.carousel.min"
 @import "../app/libs/magnific-popup/dist/magnific-popup"
+@import "../app/libs/fotorama/fotorama"
 @import "vars"
 
 /*========   .ol-start-14    wrapper for ol list started from 14   =======*/
@@ -37,6 +38,7 @@
 
 @import "page-mentory"
 @import "page-bang-music"
+@import "page-bang-girl"
 /**/
 body
 	overflow-x: hidden
@@ -143,7 +145,17 @@ body
 		left: 5%
 	&.fa-angle-right
 		right: 5%
-
+.fotorama__stage__frame
+	background-color: #fff
+.fotorama
+	box-shadow: 0 0 9px rgba(0,0,0,0.35)
+.login-descr
+	font-size: 10px
+	line-height: 14px
+	a
+		font-family: $text-bold
+		&:hover
+			text-decoration: underline
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
