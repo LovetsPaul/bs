@@ -44,6 +44,7 @@ h1.with-left-line, h2.with-left-line, h3.with-left-line, h4.with-left-line, h5.w
 
 a, a:hover, a:focus, a:active {
   text-decoration: none;
+  outline: 0;
   color: #111111; }
 
 .s-light h1, .s-light h2, .s-light h3, .s-light h4, .s-light h5, .s-light h6 {

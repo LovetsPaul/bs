@@ -94,4 +94,29 @@ $('a.mobile-menu-close-toogle').click(function(e){
 
 
 
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Загрузка #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+			arrowMarkup: '<i title="%title%" class="mfp-arrow fa fa-angle-%dir%"></i>', // markup of an arrow button
+
+			tPrev: 'Назад', // title for left button
+			tNext: 'Вперёд', // title for right button
+			tCounter: '<span class="mfp-counter">%curr% из %total%</span>' // markup of counter
+		},
+		image: {
+			tError: '<a href="%url%">Изображение #%curr%</a> не загружено.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>Bang Show</small>';
+			}
+		}
+	});
+});
+
 });
