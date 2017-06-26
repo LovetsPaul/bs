@@ -6,7 +6,8 @@
     left: -10px;
     position: relative;
     color: #fc340f;
-    text-align: left; }
+    text-align: left;
+    line-height: 21px; }
   .sircle-section-list {
     display: -webkit-box;
     display: -webkit-flex;

@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>Контакты</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,18 +44,31 @@
 		<!-- <link rel="stylesheet" href="css/fonts.min.css"> -->
 		<!-- <link rel="stylesheet" href="css/main.min.css"> -->
 	</noscript>
-
+	<script>
+		function initMap() {
+			var uluru = {lat: 53.9050563, lng: 27.5371577};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 16,
+			  center: uluru,
+			  scrollwheel: false,
+			  styles: [{"featureType":"all","elementType":"geometry","stylers":[{"color":"#e5ce63"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"gamma":0.01},{"lightness":20}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"saturation":-31},{"lightness":-33},{"weight":2},{"gamma":0.8}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"lightness":30},{"saturation":30}]},{"featureType":"poi","elementType":"geometry","stylers":[{"saturation":20}]},{"featureType":"poi.attraction","elementType":"labels.text.stroke","stylers":[{"saturation":"49"},{"visibility":"simplified"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"lightness":20},{"saturation":-20}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":10},{"saturation":-30}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"saturation":25},{"lightness":25}]},{"featureType":"water","elementType":"all","stylers":[{"lightness":-20}]}]
+			});
+			var marker = new google.maps.Marker({
+			  position: uluru,
+			  map: map,
+			  icon: 'img/map-marker.png'
+			});
+		}
+	</script>
 </head>
 
-<body class='home oh'>
+<body class='oh'>
 <div class="stage">
 	<div class="stage__logo">
 		<img src="img/bang-show-logo_l.png" data-wow-delay="1s" class="wow bounceIn" alt="Bang Show Logo">
 	</div>
 	<h1 class="stage__text">
-		<span data-wow-delay="2s" class="wow fadeInUp">Лучшее </span>
-		<span data-wow-delay="2.5s" class="wow fadeInUp">юмористическое </span>
-		<span data-wow-delay="3s" class="wow fadeInUp">шоу</span>
+		<span data-wow-delay="2s" class="wow fadeInUp">Контакты</span>
 	</h1>
 	
 </div>
@@ -73,8 +86,8 @@
 						<li class="nav-menu__item"><a href="guests.html">Почётные гости</a></li>
 						<li class="nav-menu__item"><a href="bang-music.html">Bang Music</a></li>
 						<li class="nav-menu__item"><a href="bloggers.html">Блогеры</a></li>
-						<li class="nav-menu__item"><a href="competition-prank.htm">Конкурс шуток</a></li>
-						<li class="nav-menu__item"><a href="#">Менторы</a></li>
+						<li class="nav-menu__item"><a href="competition-prank.html">Конкурс шуток</a></li>
+						<li class="nav-menu__item"><a href="contacts.html">Контакты</a></li>
 						<li class="nav-menu__item"><a href="#">Юниты</a></li>
 						<li class="nav-menu__item"><a href="#">Менторы</a></li>
 					</ul>
@@ -111,523 +124,49 @@
 
 <div class="main">
 	<div class="list">
-	
-		<div class="h-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Афиша</h2>
-						<h3 class="with-line">О проекте</h3>
-						<div class="h-about__text">
-							<p>Мы рады сообщить вам реалистичный загнутый уголок страницы. Вам понадобится несколько простых техник деформации. Вы сможете создавать загнутые уголки для бумажных страниц, выбирать угол, размер изгиба и градиент.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-kasting s-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>20 июля</h2>
-						<h3 class="with-line">Кастинг</h3>
-						<div class="h-kasting__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ullam itaque illum atque cumque, eaque, voluptatibus sit dignissimos saepe maxime quis, optio iusto neque asperiores veniam soluta molestias repellendus suscipit.</p>
-							<a href="#" class="action-button">Записаться на кастинг</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-juri">
-			<div class="h-juri__photo-wrapp">
-				<div class="container">
-					<div class="row">
-						<div class="h-juri__photo">
-							<div class="col-md-12">
-								<h3>Члены жюри Bang Show</h3>
-								<img class="lazy image-responsive" data-original="img/juri.png" alt="Члены жюри Bang Show">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="h-juri-list-wrapp s-light">
-				<div class="container">
-					<div class="row">
-						<ul class="h-juri-list">
-							<li class="h-juri-list__item">
-								<h4><a href="#">Вадим Галыгин</a></h4>
-								<div class="h-juri-list__item-descr">Комик, шоумен, продюссер <br>Аудитория 342 тыс.</div>
-							</li>
-							<li class="h-juri-list__item">
-								<h4><a href="#">Макс Корж</a></h4>
-								<div class="h-juri-list__item-descr">Певец, <br>Аудитория 377 тыс.</div>
-							</li>
-							<li class="h-juri-list__item">
-								<h4><a href="#">Александр Солодуха</a></h4>
-								<div class="h-juri-list__item-descr">Певец, звезда <br>Аудитория 5 млн.</div>
-							</li>
-							<li class="h-juri-list__item">
-								<h4><a href="#">Екатерина Иванчикова</a></h4>
-								<div class="h-juri-list__item-descr">Певица, вокалистка группы IOWA <br>Аудитория 5 млн.</div>
-							</li>
-							<li class="h-juri-list__item">
-								<h4><a href="#">Натали Роше</a></h4>
-								<div class="h-juri-list__item-descr">Стилист, ТВ-ведущая <br>Аудитория 42,5 тыс.</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="h-veduschie">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h3>Ведущие нашего шоу</h3>
-					</div>
-					<div class="col-md-6">
-						<div class="h-veduschi wow slideInLeft">
-							<div class="h-veduschi__photo"><img class="lazy" data-original="img/anna-bond.jpg" alt="Галыгин"></div>
-							<div class="h-veduschi__content">
-								<h4 class="h-veduschi__content-name"><a href="#">Анна Бонд</a></h4>
-							<div class="h-veduschi__content-descr">Певец, звезда <br>Аудитория 5млн. человек</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="h-veduschi wow slideInRight">
-							<div class="h-veduschi__photo"><img class="lazy" data-original="img/andrej-bond.jpg" alt="Галыгин"></div>
-							<div class="h-veduschi__content">
-								<h4 class="h-veduschi__content-name"><a href="#">Андрей Бонд</a></h4>
-							<div class="h-veduschi__content-descr">Певец, звезда <br>Аудитория 5млн. человек</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-special-guests s-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h3 class="with-line">Специальные гости</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="h-guest-card-wrapp  owl-carousel">
-						<div class="col-md-4 col-sm-6 col-xs-12 ">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="h-guest-card">
-								<div class="h-guest-card__photo"><img class="lazy" data-original="img/guest.jpg" alt="Иванов Иван"></div>
-								<div class="h-guest-card-content">
-									<h4 class="h-guest-card-content__title">Иванов Иванович</h4>
-									<div class="h-guest-card-content__descr">Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-junity">
-			
-			<div class="container gradient-wrapp">
-				<div class="row">
-
-					<div class="h-junity-wrapp">
-						<div class="col-md-6 col-md-push-3 col-sm-12">
-							<div class="h-junity__image">
-								<img class="lazy image-responsive" data-original="img/junity.png" alt="Юниты">
-							</div>
-						</div>
-
-						<div class="col-md-3 col-md-pull-6 col-sm-6 col-xs-6">
-							<div class="h-junity__list">
-								<ol>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-								</ol>
-							</div>
-						</div>
-
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="h-junity__list ol-start-14">
-								<ol>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-									<li><a href="#">Название команды</a></li>
-								</ol>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="h-junity-action-block s-light">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="h-junity-action-block__text">
-								<p>20 июля в «Мулен руж» пройдёт ... that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normalmaking i.</p>
-								<a href="#" class="action-button">Записаться на кастинг</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-bloggers">
-			<div class="container">
-				<div class="row col md-12">
-					<h3>Информационная поддержка</h3>
-				</div>
-			</div>
-			<div class="h-bloggers-list">
-				<div class="h-bloggers-item wow fadeInUp">
-					<div class="h-bloggers-item__image"><img src="" alt="" data-original="img/galygin_s.jpg" class="lazy"></div>
-					<nav>
-						<ul class="social-links social-links_orange social-links_small">
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</nav>
-					<h5><a href="#">Дмитрий Ермузевич</a></h5>
-					<div class="h-bloggers-item-subscr">
-						<div class="h-bloggers-item-subscr__count">600</div>
-						<div class="h-bloggers-item-subscr__descr">тыс. подписчиков</div>
-					</div>
-				</div>
-				<div class="h-bloggers-item wow fadeInUp" data-wow-delay="0.1s">
-					<div class="h-bloggers-item__image"><img src="" alt="" data-original="img/galygin_s.jpg" class="lazy"></div>
-					<nav>
-						<ul class="social-links social-links_orange social-links_small">
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</nav>
-					<h5><a href="#">Влад Бумага</a></h5>
-					<div class="h-bloggers-item-subscr">
-						<div class="h-bloggers-item-subscr__count">342</div>
-						<div class="h-bloggers-item-subscr__descr">тыс. подписчиков</div>
-					</div>
-				</div>
-				<div class="h-bloggers-item wow fadeInUp" data-wow-delay="0.2s">
-					<div class="h-bloggers-item__image"><img src="" alt="" data-original="img/galygin_s.jpg" class="lazy"></div>
-					<nav>
-						<ul class="social-links social-links_orange social-links_small">
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</nav>
-					<h5><a href="#">Максим Пушкин</a></h5>
-					<div class="h-bloggers-item-subscr">
-						<div class="h-bloggers-item-subscr__count">144</div>
-						<div class="h-bloggers-item-subscr__descr">тыс. подписчиков</div>
-					</div>
-				</div>
-				<div class="h-bloggers-item wow fadeInUp" data-wow-delay="0.3s">
-					<div class="h-bloggers-item__image"><img src="" alt="" data-original="img/galygin_s.jpg" class="lazy"></div>
-					<nav>
-						<ul class="social-links social-links_orange social-links_small">
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</nav>
-					<h5><a href="#">Юлия годунова</a></h5>
-					<div class="h-bloggers-item-subscr">
-						<div class="h-bloggers-item-subscr__count">278</div>
-						<div class="h-bloggers-item-subscr__descr">тыс. подписчиков</div>
-					</div>
-				</div>
-				<div class="h-bloggers-item wow fadeInUp" data-wow-delay="0.4s">
-					<div class="h-bloggers-item__image"><img src="" alt="" data-original="img/galygin_s.jpg" class="lazy"></div>
-					<nav>
-						<ul class="social-links social-links_orange social-links_small">
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</nav>
-					<h5><a href="#">Александр Солодуха</a></h5>
-					<div class="h-bloggers-item-subscr">
-						<div class="h-bloggers-item-subscr__count">500</div>
-						<div class="h-bloggers-item-subscr__descr">тыс. подписчиков</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h-bang-music chess-row s-light">
-				<div class="chess-row__img">
-					<a href="bang-music.html"><img class="lazy" data-original="img/89.jpg" alt="Bang Music"></a>
-				</div>
-				<div class="chess-row__text">
-					<h3 class="with-line">Bang Music</h3>
-					<p>Мы рады сообщить вам реалистичный загнутый уголок страницы. Вам понадобится несколько простых техник деформации. Вы сможете создавать загнутые уголки для бумажных страниц, выбирать угол, размер изгиба и градиент.</p>
-				</div>
-		</div>
 		
-
-		<div class="h-bang-girl s-light">
-			<div class="chess-row chess-row_reverse s-light">
-				<div class="chess-row__img">
-					<div class="h-girl-container">
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						<div class="h-bang-girl__item" style="background-image: url('img/girl.jpg')">
-							<a href="bang-girl.html#bang-girl" class="small">
-								<div class="h-bang-girl-raiting">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</a>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="chess-row__text">
-					<h3 class="with-line">Bang Girl</h3>
-					<p>Мы рады сообщить вам реалистичный загнутый уголок страницы. Вам понадобится несколько простых техник деформации. Вы сможете создавать загнутые уголки для бумажных страниц, выбирать угол, размер изгиба и градиент.</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="h-bottom s-light">
+		<div class="list-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="with-line">Спасибо текст</h3>
-						<p>Мы рады сообщить вам реалистичный загнутый уголок страницы. Вам понадобится несколько простых техник деформации. Вы сможете создавать загнутые уголки для бумажных страниц, выбирать угол, размер изгиба и градиент.</p>
-						<p>Мы рады сообщить вам реалистичный загнутый уголок страницы. Вам понадобится несколько простых техник деформации. Вы сможете создавать загнутые уголки для бумажных страниц, выбирать угол, размер изгиба и градиент.</p>
+						<h2 class="list-title">Контакты</h2>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="list-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident similique omnis quo mollitia repudiandae minima, quis, expedita ipsam nostrum accusamus neque natus, suscipit doloribus cum excepturi reprehenderit modi eos obcaecati magni officia voluptatem odio, nobis dolorem nesciunt. Quae autem, eum, dolorum neque quibusdam quis eveniet a nulla, et tempore non.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident similique omnis quo mollitia repudiandae minima.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="contacts__phone"><i class="fa fa-phone"></i>
+				<span>+375-333-33-33-33</span><br>
+				<span>+375-222-22-22-22</span>
+			</div>
+			<div class="contacts__address"><i class="fa fa-map-marker"></i>
+				г. Минск ул. <br>Кальварийская д.1 <br>Ресторан-клуб «Мулен Руж»
+			</div>
+			<div class="contacts__email"><i class="fa fa-envelope"></i>
+				<a href="mailto:mail@bang-show.by">mail@bang-show.by</a>
+			</div>
+		</div>
+		<div class="map">
+			<nav>
+				<ul class="social-links to-right">
+					<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>	
+			<div id="map"></div>
 		</div>
 		
 	</div>
@@ -719,7 +258,6 @@
 	</div>	
 </div>
 
-
 <div class="mobile-menu-popup-wrapp">
 
 	<ul class="nav-menu">
@@ -731,14 +269,13 @@
 		<li class="nav-menu__item"><a href="guests.html">Почётные гости</a></li>
 		<li class="nav-menu__item"><a href="bang-music.html">Bang Music</a></li>
 		<li class="nav-menu__item"><a href="bloggers.html">Блогеры</a></li>
-		<li class="nav-menu__item"><a href="competition-prank.htm">Конкурс шуток</a></li>
-		<li class="nav-menu__item"><a href="#">Менторы</a></li>
+		<li class="nav-menu__item"><a href="competition-prank.html">Конкурс шуток</a></li>
+		<li class="nav-menu__item"><a href="contacts.html">Контакты</a></li>
 		<li class="nav-menu__item"><a href="#">Юниты</a></li>
 		<li class="nav-menu__item"><a href="#">Менторы</a></li>
 	</ul>
 	<a href="#" class="mobile-menu-close-toogle mobile-menu-close"><i class="fa fa-close"></i></a>
 </div>
-	
 
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
@@ -746,6 +283,8 @@
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
+	<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsKvdyprBMDqXAGrQUdUqA2Wl_LVXI5Sw&callback=initMap&hl=ru">
+    </script>
 	<!-- Load Scripts End -->
 
 </body>

@@ -18,11 +18,14 @@
 	margin: 20px
 	color: $text-color
 
-.mentory-list__item
+.people-list__item
 	margin-top: 20px
+	&:first-child
+		margin-top: 0
 	h3
 		color: $text-color
-.mentor-item-header
+		line-height: 38px
+.people-item-header
 	background: url(../img/mentory-bg.jpg) no-repeat top center
 	background-size: cover
 	text-align: center
@@ -30,14 +33,14 @@
 	img
 		margin-top: -35px
 
-.mentors-junits-list
+.junits-list
 	background-color: #000
 	min-height: 300px
 	overflow: hidden
 	padding-top: 40px
 	padding-bottom: 30px
 .junit-disabled
-	.mentors-junit-card__photo
+	.junit-card__photo
 		&::after
 			content: ''
 			position: absolute
@@ -47,7 +50,7 @@
 			width: 100%
 			height: 191px
 			background: rgba(0,0,0,0.6)
-.mentors-junit-card
+.junit-card
 	&.junit-disabled
 		position: relative
 		&::after

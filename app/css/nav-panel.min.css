@@ -2404,7 +2404,6 @@
   margin-top: 0;
   padding: 0;
   line-height: 24px;
-  margin: 0;
   list-style-type: none; }
   .social-links.to-right {
     margin-right: 4px; }
@@ -2412,10 +2411,6 @@
     color: #fff; }
     .social-links_white li:hover {
       color: #ffe400; }
-  .social-links_orange {
-    color: #ffe400; }
-    .social-links_orange li:hover {
-      color: #fff; }
   .social-links li {
     display: inline-block;
     margin-left: 4px;
@@ -2426,3 +2421,13 @@
     transition: all 0.2s ease; }
     .social-links li a {
       color: inherit; }
+  .social-links_red {
+    color: #fc340f; }
+    .social-links_red li {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+    .social-links_red li:hover {
+      color: #000; }
+  .social-links_orange {
+    color: #ffe400; }
+    .social-links_orange li:hover {
+      color: #fff; }

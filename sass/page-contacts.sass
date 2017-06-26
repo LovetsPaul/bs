@@ -1,0 +1,28 @@
+@import "vars"
+@import "map"
+
+.contacts
+	display: flex
+	align-items: baseline
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	text-align: center
+	padding-bottom: 15px
+	&__phone,
+	&__address,
+	&__email
+		padding: 15px
+		flex: 33.3%
+	i
+		display: block
+		font-size: 70px
+		text-align: center
+		color: $red
+.map
+	.social-links
+		margin-right: 15px
+		margin-bottom: 5px
+		text-shadow: 1px 1px 1px rgba(0,0,0,.4)
+		li:hover
+			color: $red
