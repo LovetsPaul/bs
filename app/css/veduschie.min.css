@@ -1,0 +1,3 @@
+.veduschie-list .people-list__item::after {
+  content: '';
+  background: none; }

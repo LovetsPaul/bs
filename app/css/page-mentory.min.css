@@ -90,13 +90,15 @@
       overflow: auto;
       position: relative;
       margin-bottom: 10px; }
-    .junit-card-content__blogger i {
-      color: #fc340f;
-      position: relative;
-      top: 1px;
-      -webkit-transition: color 0.2s ease;
-      transition: color 0.2s ease; }
-      .junit-card-content__blogger i:hover {
-        color: #111111; }
-    .junit-card-content__descr span, .junit-card-content__blogger span {
+    .junit-card-content__blogger, .junit-card-content__mentor {
+      margin-bottom: 5px; }
+      .junit-card-content__blogger i, .junit-card-content__mentor i {
+        color: #fc340f;
+        position: relative;
+        top: 1px;
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.2s ease; }
+        .junit-card-content__blogger i:hover, .junit-card-content__mentor i:hover {
+          color: #111111; }
+    .junit-card-content__descr span, .junit-card-content__blogger span, .junit-card-content__mentor span {
       font-family: "DINPro-Black"; }

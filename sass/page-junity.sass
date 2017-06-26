@@ -1,0 +1,51 @@
+@import "vars"
+
+.junit-list
+	&__item
+		display: flex
+		flex-wrap: wrap
+		background-color: #fff
+		box-shadow: 0 0 5px rgba(0,0,0,0.5)
+		margin: 15px 15px 30px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -25px
+			right: 10px
+			width: 83px
+			height: 56px
+			background: url(../img/bang-show-logo_s.png) no-repeat
+		.junit-card__about
+			flex: 70%
+			padding: 15px 30px 40px
+			font-size: 16px
+			background: url(../img/triangle-bg.jpg) repeat
+			position: relative
+			.login-descr
+				position: relative
+				z-index: 1
+				position: absolute
+				bottom: 5px
+				right: 15px
+				padding: 0 30px
+			&-text
+				position: relative
+				z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: url(../img/doted-overlay.png) repeat
+				z-index: 0
+.junit-card 
+	&--justify
+		flex: 30%
+		margin-bottom: 0
+		margin-top: 0
+	.bang-show-raiting
+		margin-top: 20px
+		margin-bottom: 0

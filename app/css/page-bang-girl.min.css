@@ -2,6 +2,11 @@
 .post-ratings .metatextsmall {
   font-size: 12px; }
 
+.bang-show-raiting__title {
+  font-size: 13px;
+  font-family: "DINPro-Black";
+  margin-bottom: 0; }
+
 .bang-girl {
   margin-left: 15px;
   margin-right: 15px;

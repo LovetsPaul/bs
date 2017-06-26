@@ -25,14 +25,14 @@ var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop
 $('.stage').ready(function(){
 	$('.preloader').fadeOut('fast');
 
-	if( cont_top < 10 && !isMobile.any() && $('body').hasClass('home')){
+	if( cont_top < 10 && !isMobile.any() && $('body').hasClass('home') && ( getCookie('isVisitedHomePage') != 'true' )){
 		$('html, body').stop().delay(5000).animate({
 			scrollTop: $("#nav-panel").offset().top+40
 			}, 800, 'swing', function(){
 
 			$('body').delay(1000).removeClass('oh');
 		});
-
+		document.cookie = "isVisitedHomePage=true; path=/;";
 	}else{
 
 		$('body').removeClass('oh');
@@ -119,7 +119,11 @@ $(document).ready(function() {
 	});
 });
 
-
-
+function getCookie(name) {
+  var matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 
 });

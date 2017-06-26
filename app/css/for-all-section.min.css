@@ -10,7 +10,8 @@
 .h-junity-action-block,
 .h-bang-girl,
 .list-featured-image,
-.people-list__item {
+.people-list__item,
+.veduschie-list .people-item-header {
   position: relative; }
   .h-about::after,
   .h-kasting::after,
@@ -23,7 +24,8 @@
   .h-junity-action-block::after,
   .h-bang-girl::after,
   .list-featured-image::after,
-  .people-list__item::after {
+  .people-list__item::after,
+  .veduschie-list .people-item-header::after {
     z-index: 2;
     content: '';
     position: absolute;

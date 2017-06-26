@@ -6190,7 +6190,8 @@ body {
 .h-junity-action-block,
 .h-bang-girl,
 .list-featured-image,
-.people-list__item {
+.people-list__item,
+.veduschie-list .people-item-header {
   position: relative; }
   .h-about::after,
   .h-kasting::after,
@@ -6203,7 +6204,8 @@ body {
   .h-junity-action-block::after,
   .h-bang-girl::after,
   .list-featured-image::after,
-  .people-list__item::after {
+  .people-list__item::after,
+  .veduschie-list .people-item-header::after {
     z-index: 2;
     content: '';
     position: absolute;
@@ -9235,15 +9237,17 @@ body {
       overflow: auto;
       position: relative;
       margin-bottom: 10px; }
-    .junit-card-content__blogger i {
-      color: #fc340f;
-      position: relative;
-      top: 1px;
-      -webkit-transition: color 0.2s ease;
-      transition: color 0.2s ease; }
-      .junit-card-content__blogger i:hover {
-        color: #111111; }
-    .junit-card-content__descr span, .junit-card-content__blogger span {
+    .junit-card-content__blogger, .junit-card-content__mentor {
+      margin-bottom: 5px; }
+      .junit-card-content__blogger i, .junit-card-content__mentor i {
+        color: #fc340f;
+        position: relative;
+        top: 1px;
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.2s ease; }
+        .junit-card-content__blogger i:hover, .junit-card-content__mentor i:hover {
+          color: #111111; }
+    .junit-card-content__descr span, .junit-card-content__blogger span, .junit-card-content__mentor span {
       font-family: "DINPro-Black"; }
 
 .sircle-section {
@@ -9345,6 +9349,11 @@ body {
 
 .post-ratings .metatextsmall {
   font-size: 12px; }
+
+.bang-show-raiting__title {
+  font-size: 13px;
+  font-family: "DINPro-Black";
+  margin-bottom: 0; }
 
 .bang-girl {
   margin-left: 15px;
@@ -9500,6 +9509,72 @@ body {
   .map .social-links li:hover {
     color: #fc340f; }
 
+.junit-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: 15px 15px 30px;
+  position: relative; }
+  .junit-list__item::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    width: 83px;
+    height: 56px;
+    background: url(../img/bang-show-logo_s.png) no-repeat; }
+  .junit-list__item .junit-card__about {
+    -webkit-box-flex: 70%;
+    -webkit-flex: 70%;
+    -ms-flex: 70%;
+    flex: 70%;
+    padding: 15px 30px 40px;
+    font-size: 16px;
+    background: url(../img/triangle-bg.jpg) repeat;
+    position: relative; }
+    .junit-list__item .junit-card__about .login-descr {
+      position: relative;
+      z-index: 1;
+      position: absolute;
+      bottom: 5px;
+      right: 15px;
+      padding: 0 30px; }
+    .junit-list__item .junit-card__about-text {
+      position: relative;
+      z-index: 1; }
+    .junit-list__item .junit-card__about::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/doted-overlay.png) repeat;
+      z-index: 0; }
+
+.junit-card--justify {
+  -webkit-box-flex: 30%;
+  -webkit-flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.junit-card .bang-show-raiting {
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.veduschie-list .people-list__item::after {
+  content: '';
+  background: none; }
+
 /**/
 body {
   overflow-x: hidden; }
@@ -9513,14 +9588,14 @@ body {
   min-height: 200px; }
 
 .home .list {
-  background: url(../img/triangle-bg.jpg) repeat-y;
-  -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8); }
+  background: url(../img/triangle-bg.jpg) repeat-y; }
   .home .list .s-light {
     background: url(../img/doted-overlay.png) repeat; }
 
 .list {
   margin: auto;
+  -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8);
   position: relative;
   margin-top: -65px;
   max-width: 1170px;
