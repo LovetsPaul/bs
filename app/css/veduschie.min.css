@@ -1,3 +1,1 @@
-.veduschie-list .people-list__item::after {
-  content: '';
-  background: none; }
+.veduschie-list .people-list__item::after{content:'';background:0 0}

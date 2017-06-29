@@ -42,7 +42,7 @@ $('.stage').ready(function(){
 
 $("img.lazy").lazyload({
 	effect : "fadeIn",
-	threshold : 300
+	threshold : 400
 });
 
 
